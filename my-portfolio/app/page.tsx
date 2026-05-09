@@ -1,3 +1,4 @@
+import { Mail} from "lucide-react"
 export default function Home() {
   return (
     <main>
@@ -20,6 +21,13 @@ export default function Home() {
       <div className="hero-footer">
       <b>For Q&A, start a chat with Ben Support</b>
       <p>For any further contact, please refer to my social media platforms below.</p>
+      </div>
+      <div className="hero-links">
+        <a href="/Benjamin_Dadzie_CV.pdf"> Resume</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"> LinkedIn</a>
+        <a href="https://github.com/yourusername" target="_blank"> GitHub</a>
+        <a href="https://instagram.com/yourusername" target="_blank"> Instagram</a>
+        <a href="mailto:youremail@gmail.com"><Mail size={16} /> Email</a>
       </div>
       </div>
     </main>
