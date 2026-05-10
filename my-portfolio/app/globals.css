@@ -73,3 +73,16 @@ body {
   margin-top: 2rem;
 }
 
+.hero-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 2rem;
+  margin: 0 auto;
+}
+
+.hero-links img {
+  width: 30;
+  height: 30;
+}
+
