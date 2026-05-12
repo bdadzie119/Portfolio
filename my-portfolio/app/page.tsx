@@ -111,7 +111,27 @@ export default function Home() {
         </div>
         )}
       </div>
+       <div className="projects">
+        <div className="project-header">
+          <h2>Featured Projects</h2>
+          <a href="/projects">view more →</a>
+        </div>
+
+        <div className="project-card">
+          <h3>Ticketing Platform</h3>
+          <p>A Ticketmaster-style ticketing application. Built the backend as part of a university group project, currently rebuilding the frontend independently.</p>
+          <div className="project-tags">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>SQL</span>
+          </div>
+          <div className="project-links">
+            <a href="https://github.com/bdadzie119/TicketMaster_alike" target="_blank">Source ↗</a>
+          </div>
+        </div>
+      </div>
     </main> 
   );
 }
+
 
