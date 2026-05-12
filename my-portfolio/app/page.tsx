@@ -1,7 +1,8 @@
+"use client"
 import { Mail, FileText } from "lucide-react"
-//import {useState} from "react"
-
+import {useState} from "react";
 export default function Home() {
+  const[activeTab, setActiveTab] = useState("work")
   return (
     <main>
       <div className="navbar">
@@ -25,7 +26,7 @@ export default function Home() {
         </div>
 
         <div className="hero-footer">
-          <b>For Q&A, start a chat with Ben Support</b>
+          {/*<p>For Q&A, start a chat with Ben Support</p>*/}
           <p>For any further contact, please refer to my social media platforms below.</p>
         </div>
 
@@ -43,36 +44,18 @@ export default function Home() {
           <a href="mailto:dadziebenjamin995@gmail.com"><Mail size={30} /></a>
         </div>
       </div>
-
       <div className="experience">
-        <div className="experience-education">
-          <div className="entry">
-            <div className="entry-header">
-              <a href="https://www.hud.ac.uk/" target="_blank">University of Huddersfield</a>
-              <span>2023 - Present</span>
-            </div>
-            <p className="entry-role">BSc Computer Science</p>
-            <ul>
-              <li>Foundation with Mechanical Engineering</li>
-            </ul>
-          </div>
-
-          <div className="entry">
-            <div className="entry-header">
-              <a href="https://www.elliotthudsoncollege.ac.uk/" target="_blank">Elliott Hudson Academy</a>
-              <span>2021 - 2023</span>
-            </div>
-          </div>
-
-          <div className="entry">
-            <div className="entry-header">
-              <a href="https://www.ruthgorse.leeds.sch.uk/" target="_blank">Ruth Gorse Academy</a>
-              <span>2016 - 2021</span>
-            </div>
-          </div>
+        <div className="tab-buttons">
+          <button 
+            className={activeTab ==="work" ? "tab-active" : ""} 
+            onClick={() =>setActiveTab("work")}>Work 
+          </button>
+          <button
+          className={activeTab === "education" ? "tab-active" : ""}
+          onClick={() => setActiveTab("education")}>Education</button>
         </div>
-
-        <div className="experience-work">
+        {activeTab == "work" && (
+          <div className="experience-work">
           <div className="entry">
             <div className="entry-header">
               <a href="https://www.donershack.com/" target="_blank">Doner Shack, Leeds</a>
@@ -99,6 +82,34 @@ export default function Home() {
             </ul>
           </div>
         </div>
+        )}
+        {activeTab == "education" && (
+          <div className="experience-education">
+          <div className="entry">
+            <div className="entry-header">
+              <a href="https://www.hud.ac.uk/" target="_blank">University of Huddersfield</a>
+              <span>2023 - Present</span>
+            </div>
+            <p className="entry-role">BSc Computer Science</p>
+            <ul>
+              <li>Foundation with Mechanical Engineering</li>
+            </ul>
+          </div>
+          <div className="entry">
+            <div className="entry-header">
+              <a href="https://www.elliotthudsoncollege.ac.uk/" target="_blank">Elliott Hudson Academy</a>
+              <span>2021 - 2023</span>
+            </div>
+          </div>
+
+          <div className="entry">
+            <div className="entry-header">
+              <a href="https://www.ruthgorse.leeds.sch.uk/" target="_blank">Ruth Gorse Academy</a>
+              <span>2016 - 2021</span>
+            </div>
+          </div>
+        </div>
+        )}
       </div>
     </main> 
   );
