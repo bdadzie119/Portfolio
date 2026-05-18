@@ -166,7 +166,10 @@ body {
 .project-header a{
   font-size: 1rem;
   color: #808080;
-  text-decoration: none;
+  text-decoration: none; 
+}
+.project-header h2{
+  font-size: 1.5rem;
 }
 .projects-tags {
 display: flex;
@@ -189,6 +192,10 @@ align-items: center;
   margin-bottom: 1rem;
 }
 
+.project-card h2{
+  font-size: 1.5rem;
+}
+
 .project-links{
   margin-top: 1rem;
 }
@@ -201,4 +208,31 @@ align-items: center;
 
 .project-links a:hover{
   color: #FFFFFF;
+}
+.recent-posts{
+  margin-top: 2rem;
+  margin: 0 auto;
+  max-width: 42rem;
+  padding: 1.5rem;
+}
+.recent-post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.recent-posts a{
+  font-size: 1rem;
+  color: #808080;
+  text-decoration: none;
+}
+.footer{
+  max-width: 42rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 2 rem;
+  text-align:center;
+  border-top: 1px solid#1e3a5f;
+  font-size: 0.87rem;
+  color: #808080;
 }
