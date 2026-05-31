@@ -236,3 +236,12 @@ align-items: center;
   font-size: 0.87rem;
   color: #808080;
 }
+.projects-page h1{
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+.projects-page{
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}

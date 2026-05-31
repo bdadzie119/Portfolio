@@ -31,7 +31,7 @@ export default function RootLayout({
         <nav className="navbar">
           <a href="/">Home</a>
           <a href="/projects">Projects</a>
-          <a href="/journal">Journal</a>
+          <a href="/blog">blog</a>
           <a href="/contact">Contact</a>
         </nav>
         {children}
