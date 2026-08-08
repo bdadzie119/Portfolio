@@ -16,7 +16,7 @@ export default function Blog(){
     return(
         <main>
             <div className="blog-page">
-                <h1>My blog</h1>
+                <h1>My Blog</h1>
                 <div className="search-bar">
                     <input 
                     type="text"
@@ -27,7 +27,8 @@ export default function Blog(){
                     <button onClick={() => setSearch("")}>Clear</button>
                 </div>
                 <div className="blog-timeline">
-                    <span><ArrowUpDown size={16}/>Sort:</span>
+                    <ArrowUpDown size={16}/>
+                    <span>Sort:</span>
                     <select value={sort} onChange={(e) => setSort(e.target.value)}>
                         <option value = "newest">Newest</option>
                         <option value = "oldest">Oldest</option>

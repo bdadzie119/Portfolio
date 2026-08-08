@@ -29,7 +29,8 @@ export default function Home() {
             <img src="/linkedin.svg" alt="Linked In" />
           </a>
           <a href="https://github.com/bdadzie119" target="_blank">
-            <img src="/Github_dark.svg" alt="Github" />
+            <img src="/Github_dark.svg" alt="Github" className="github-dark"/>
+            <img src="/Github_light.svg" alt="Github" className="github-light"/>
           </a>
           <a href="https://www.instagram.com/bdadzie119/" target="_blank">
             <img src="/instagram-icon.svg" alt="Instagram" />
@@ -104,7 +105,7 @@ export default function Home() {
         </div>
         )}
       </div>
-       <div className="projects">
+      <div className="projects">
         <div className="project-header">
           <h2>Featured Projects</h2>
           <a href="/projects">view more →</a>
@@ -130,7 +131,7 @@ export default function Home() {
         </div>
       </div>
       <footer className="footer">
-        <p>© Benjamin Dadzie</p>
+        <span>© 2026<a href="/"> bendev.com |</a><a href="/"> privacy policy</a></span>
       </footer>
     </main> 
   );

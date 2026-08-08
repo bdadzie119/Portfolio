@@ -12,7 +12,7 @@ export default function Projects(){
                         <span>SQL</span>
                     </div>
                     <div className="project-links">
-                         <a href="https://github.com/bdadzie119/TicketMaster_alike" target="_blank">Source ↗</a>
+                        <a href="https://github.com/bdadzie119/TicketMaster_alike" target="_blank">Source ↗</a>
                     </div>
                 </div>
             </div>

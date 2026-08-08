@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafaf8;
-  --foreground: #171717;
+  --background: #0b1c36;
+  --foreground: #ededed;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -10,12 +10,17 @@
 }
 
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0b1c36;
-    --foreground: #ededed;
-  }
+html.light {
+  --background: #fafaf8;
+  --foreground: #171717;
 }
+
+.github-light { display: none; }
+.github-dark { display: block; }
+
+
+html.light .github-light { display: block; }
+html.light .github-dark { display: none; }
 
 body {
   background: var(--background);
@@ -172,11 +177,11 @@ body {
   font-size: 1.5rem;
 }
 .projects-tags {
-display: flex;
-gap: 0.5rem;
-margin-top: 1rem;
-flex-wrap: wrap;
-align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .project-tags span{
   font-size: 1rem;
@@ -230,11 +235,11 @@ align-items: center;
   max-width: 42rem;
   margin: 0 auto;
   margin-top: 2rem;
-  padding: 2 rem;
+  padding: 2rem;
   text-align:center;
-  border-top: 1px solid#1e3a5f;
+  border-top: 1px solid #1e3a5f;
   font-size: 0.87rem;
-  color: #808080;
+  color: #ffffff;
 }
 .projects-page h1{
   font-size: 3rem;
@@ -244,4 +249,71 @@ align-items: center;
   max-width: 42rem;
   margin: 0 auto;
   padding: 4rem 1.5rem;
+}
+.blog-page{
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+.blog-page h1{
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+.search-bar{
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+.search-bar input{
+  flex: 1;
+}
+
+.blog-timeline{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+.post-card{
+  border: 1px solid #808080;
+  margin-bottom: 0.8rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+.sort-control{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.contact-page{
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.contact-page h1{
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-expansion{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0.87rem;
+  border: #1e3a5f;
+  border-radius: 99px;
+  font-family: inherit;
+}
+.send-button{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #FFFFFF;
+  color: #171717;
+  border: none;
+}
+.send-button a:hover{
+  color: #808080;
 }
